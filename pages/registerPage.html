@@ -17,13 +17,18 @@
         <div class="container py-5 h-50">
             <div class="row d-flex justify-content-center align-items-center h-50">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-4">
-                    <div class="card bg-light text-dark" style="width: 350px; border-radius: 1rem; height: 600px;">
+                    <div class="card bg-light text-dark" style="width: 350px; border-radius: 1rem; height: 650px;">
                         <div class="card-body p-4 text-center">
 
                             <div class="mb-md-5 mt-md-4 pb-5">
 
-                                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                                <p class="text-dark-50 mb-5">Please enter your login and password!</p>
+                                <h2 class="fw-bold mb-2 text-uppercase">Register</h2>
+                                <p class="text-dark-50 mb-5">Please enter your details</p>
+
+                                <div data-mdb-input-init class="form-outline form-white mb-4">
+                                    <input type="text" id="name" class="form-control form-control-lg" />
+                                    <label class="form-label" for="name">Name</label>
+                                </div>
 
                                 <div data-mdb-input-init class="form-outline form-white mb-4">
                                     <input type="email" id="email" class="form-control form-control-lg" />
@@ -36,11 +41,13 @@
                                 </div>
 
                                 <button data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-lg px-5"
-                                    type="submit" style="margin-top: 10px;" id="loginBtn">Login</button>
+                                    type="submit" style="margin-top: 10px;" id="registerBtn">Register</button>
+
 
                                 <div style="margin-top: 20px;">
-                                    <p class="mb-0">Don't have an account? <a href="./registerPage.html"
-                                            class="text-dark-50 fw-bold">Sign Up</a>
+                                    <p class="mb-0">Don't have an account? <a href="#!"
+                                            class="text-dark-50 fw-bold">Sign
+                                            Up</a>
                                     </p>
                                 </div>
                             </div>
@@ -56,7 +63,8 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="../scripts/loginPage.js"></script>
+    <script type="module" src="../scripts/registerPage.js"></script>
+
 
 </body>
 
