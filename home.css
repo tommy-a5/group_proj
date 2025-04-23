@@ -1,0 +1,135 @@
+:root {
+    --background: #121212;
+    --card-bg: #2a2a2a;
+    --input-bg: #3a3a3a;
+    --input-border: #555;
+    --input-text: #eee;
+    --text-color: #000000;
+    --muted-text: #777;
+    --accent-color: #0d6efd;
+    --checkbox-accent: #0d6efd;
+    --shadow: rgba(0, 0, 0, 0.4);
+  }
+  
+  body {
+    background: var(--background);
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    flex-direction: column;
+  }
+  
+  .vh-100.gradient-custom {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* gap: 20px; */
+    max-width: 1600px;
+    width: 100%;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-body {
+    /* padding: 20px; */
+  }
+  
+  input.form-control {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--input-text);
+    border-radius: 8px;
+  }
+  
+  input.form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+  }
+  
+  .form-label {
+    color: var(--muted-text);
+  }
+  
+  .btn-info {
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+  
+  .btn-info:hover {
+    background-color: #0b5ed7;
+  }
+  
+  .nav-tabs .nav-link {
+    color: var(--muted-text);
+    border: none;
+  }
+  
+  .nav-tabs .nav-link.active {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+  }
+  
+  .list-group-item {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--text-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .list-group-item s {
+    color: var(--muted-text);
+  }
+  
+  input.form-check-input {
+    accent-color: var(--checkbox-accent);
+  }
+  
+  @media (max-width: 1400px) {
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .todo-card {
+    background: #2a2a2a;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    color: #ddd;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
