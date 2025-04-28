@@ -1,7 +1,7 @@
 :root {
-    --background: #121212;
-    --card-bg: #2a2a2a;
-    --input-bg: #3a3a3a;
+    --background: #fdfdfd;
+    --card-bg: #9affdd;
+    --input-bg: #3f86ff;
     --input-border: #555;
     --input-text: #eee;
     --text-color: #000000;
@@ -36,7 +36,7 @@
     width: 100%;
   }
   
-  .card {
+  .card{
     background: var(--card-bg);
     border-radius: 12px;
     box-shadow: 0 4px 12px var(--shadow);
@@ -88,7 +88,7 @@
   .list-group-item {
     background: var(--input-bg);
     border: 1px solid var(--input-border);
-    color: var(--text-color);
+    color: black;
     border-radius: 8px;
     margin-bottom: 10px;
     
@@ -121,7 +121,7 @@
   }
   
   .todo-card {
-    background: #2a2a2a;
+    background: #8ccdf6;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     display: flex;
@@ -134,22 +134,22 @@
   }
   
   /* Tabs Container */
-.nav-tabs {
+/* .nav-tabs {
   border-bottom: none;
   /* display: flex; */
-  justify-content: center;
+  /* justify-content: center;
   background-color: transparent;
-}
+} */ */
 
 /* Active Tab */
-.nav-tabs .nav-link.active {
+/* .nav-tabs .nav-link.active {
   color: #00bfff; /* Light blue active text */
-  font-weight: 600;
+  /* font-weight: 600;
 
-}
+} */ */
 
 /* Underline effect */
-.nav-tabs .nav-link.active::after {
+/* .nav-tabs .nav-link.active::after {
   content: '';
   position: absolute;
   left: 0;
@@ -157,34 +157,34 @@
   height: 2px;
   width: 100%;
   background-color: #00bfff; /* Light blue underline */
-  border-radius: 2px;
+  /* border-radius: 2px;
   
-}
+} */ */
 
 /* Hover effect */
-.nav-tabs .nav-link:hover {
+/* .nav-tabs .nav-link:hover {
   color: #ffffff;
-}
+} */
 
 
 /* Tabs Container */
-.nav-tabs {
+/* .nav-tabs {
   border-bottom: none;
   justify-content: center;
   background-color: transparent;
   list-style: none; /* Remove bullets */
-  padding-left: 0; /* Remove any default padding */
-  padding: 10px;
+  /* padding-left: 0; /* Remove any default padding */
+  /* padding: 10px; */ */
 
-}
+/* } */ */
 
 /* Each Tab */
-.nav-tabs .nav-item {
-  list-style: none; /* Double remove bullets */
-  padding: 3px;
-}
+/* .nav-tabs .nav-item {
+  list-style: none; Double remove bullets */
+  /* padding: 3px;
+} */
 
-.nav-tabs .nav-link {
+/* .nav-tabs .nav-link {
   color: #bbb;
   background: transparent;
   border: none;
@@ -195,16 +195,16 @@
   transition: all 0.3s ease;
   position: relative;
   text-decoration: none;
-}
+} */
 
 /* Active Tab */
-.nav-tabs .nav-link.active {
-  color: #00bfff; /* Light blue active text */
-  font-weight: 600;
-}
+/* .nav-tabs .nav-link.active {
+  color: #00bfff; Light blue active text */
+  /* font-weight: 600;
+} */
 
 /* Underline effect - fixed */
-.nav-tabs .nav-link.active::after {
+/* .nav-tabs .nav-link.active::after {
   content: '';
   position: absolute;
   bottom: 8px; 
@@ -213,11 +213,11 @@
   height: 2px;
   background-color: #00bfff;
   border-radius: 2px;
-}
+} */
 
-.nav-tabs .nav-link:hover {
+/* .nav-tabs .nav-link:hover {
   color: #ffffff;
-}
+} */
 
 ul, ol {
   list-style: none; 
@@ -239,26 +239,38 @@ ul, ol {
 
 .tab 
 {
-  overflow: hidden;
+  display: flex;
   border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
   background-color: #f1f1f1;
-  width: fit-content;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
 .tab button {
+  flex: 1;
   background-color: inherit;
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
+  padding: 3px;
   /* padding: 14px 16px; */
   transition: 0.3s;
 }
 
 .tab button:hover {
   background-color: #ddd;
+  border-radius: 5px;
 }
 
 .tab button.active {
   background-color: #ccc;
+  border-radius: 5px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
