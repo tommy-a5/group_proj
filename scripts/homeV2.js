@@ -17,9 +17,7 @@ class Task {
       $("#addModal").show();
     });
   
-    $("#closeModal").click(() => {
-      $("#addModal").hide();
-    });
+    
 
     $("#addModal").html(`
         <div class="modal-content p-4 bg-white rounded shadow">
@@ -69,6 +67,10 @@ class Task {
         </div>
       `);
   
+      $("#closeModal").click(() => {
+        $("#addModal").hide();
+      });
+
     $("#addTask").click(() => {
       let time = $("#time").val();
       let details = $("#taskDetails").val();

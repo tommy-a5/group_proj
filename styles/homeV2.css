@@ -174,3 +174,6 @@ body {
     color: #888;
   }
   
+  #addModal{
+    justify-content: center;
+  }
