@@ -195,3 +195,4 @@ function deleteTask(task, index)
 {
 
 }
+
