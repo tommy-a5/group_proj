@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Calendar</title>
+    <link rel="stylesheet" href="../styles/homeV3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div id="loggedUserDiv">
+            <span id="loggedInUser"></span>
+            <button id="loginBtn">Login</button>
+            <button id="signInBtn">Sign in</button>
+        </div>
+        <button id="addBtn" class="add-button">Add Task</button>
+    </div>
+
+    <div id="container" class="calendar-container"></div>
+
+
+    <!-- Add Task Modal -->
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAddModal">&times;</span>
+            <h2 id="titleAddTask">Add Task</h2>
+            <div id="addTaskDiv"></div>
+        </div>
+    </div>
+
+    <!-- Edit Task Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeEditModal">&times;</span>
+            <h2>Edit Task</h2>
+            <div id="editTaskDiv">Coming soon...</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><strong> Ⓒ Created by : Tevel Halilit Dabush & Tommy Anor Ⓒ</strong></p>
+    </footer>
+
+    <script type="module" src="../scripts/homeV3.js"></script>
+</body>
+
+</html>

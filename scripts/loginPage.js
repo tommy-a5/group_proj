@@ -22,7 +22,7 @@ $("#loginBtn").click((event)=>
                 if(user.password == password)
                 {
                     localStorage.setItem("currentUser", JSON.stringify(user));
-                    window.location.href="home.html";
+                    window.location.href="./homeV3.html";
                     return;
                 }
                 else

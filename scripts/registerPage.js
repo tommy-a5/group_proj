@@ -7,6 +7,12 @@ $("#registerBtn").click((event)=>
     let name = $("#name").val();
     let email = $("#email").val();
     let password = $("#password").val();
+    
+    if(!name || !email || !password)
+    {
+    alert("You need to fill all the fields");
+    return;
+    }
 
     let newUser = new User(name, password, email);
     let users= JSON.parse(localStorage.getItem("Users"));
@@ -21,4 +27,5 @@ $("#registerBtn").click((event)=>
     }
 
     alert(`Hello ${name}`);
+    window.location.href="./oginPage.html";
 })
