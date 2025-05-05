@@ -27,5 +27,5 @@ $("#registerBtn").click((event)=>
     }
 
     alert(`Hello ${name}`);
-    window.location.href="./oginPage.html";
+    window.location.href="./loginPage.html";
 })

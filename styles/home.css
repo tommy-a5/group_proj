@@ -1,277 +1,304 @@
-:root {
-    --background: #fdfdfd;
-    --card-bg: #9affdd;
-    --input-bg: #3f86ff;
-    --input-border: #555;
-    --input-text: #eee;
-    --text-color: #000000;
-    --muted-text: #777;
-    --accent-color: #0d6efd;
-    --checkbox-accent: #0d6efd;
-    --shadow: rgba(0, 0, 0, 0.4);
-  }
-  
-  body {
-    background: var(--background);
+body {
     margin: 0;
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-color);
-    flex-direction: column;
-  }
-  
-  .vh-100.gradient-custom {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--background);
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    /* gap: 20px; */
-    max-width: 1600px;
-    width: 100%;
-  }
-  
-  .card{
-    background: var(--card-bg);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px var(--shadow);
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-body {
-    /* padding: 20px; */
-  }
-  
-  input.form-control {
-    background: var(--input-bg);
-    border: 1px solid var(--input-border);
-    color: var(--input-text);
-    border-radius: 8px;
-  }
-  
-  input.form-control:focus {
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
-    
-  }
-  
-  .form-label {
-    color: var(--muted-text);
-    
-  }
-  
-  .btn-info {
-    background-color: var(--accent-color);
-    border: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    
-  }
-  
-  .btn-info:hover {
-    background-color: #0b5ed7;
-  }
-  
-  .nav-tabs .nav-link {
-    color: var(--muted-text);
-    border: none;
-    
-  }
-  
-  .list-group-item {
-    background: var(--input-bg);
-    border: 1px solid var(--input-border);
+    background-color: #fdfdfd;
     color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.add-button,
+#loginBtn, #signInBtn {
+    background-color: #00bcd4;
+    padding: 10px 16px;
+    border: none;
     border-radius: 8px;
-    margin-bottom: 10px;
-    
-  }
-  
-  .list-group-item:last-child {
-    margin-bottom: 0;
-  }
-  
-  .list-group-item s {
-    color: var(--muted-text);
-  }
-  
-  input.form-check-input {
-    accent-color: var(--checkbox-accent);
-  }
-  
-  @media (max-width: 1400px) {
-    .container {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-  }
-  
-  .calendar-grid {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#editBtn,
+#deleteBtn {
+    background-color: #00bcd4;
+    padding: 5px 16px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.calendar-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-  
-  .todo-card {
-    background: #8ccdf6;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    display: flex;
-    flex-direction: column;
-    color: #ddd;
-  }
-  
-  .card-body {
+    gap: 10px;
     padding: 20px;
-  }
-  
-  /* Tabs Container */
-/* .nav-tabs {
-  border-bottom: none;
-  /* display: flex; */
-  /* justify-content: center;
-  background-color: transparent;
-} */ */
-
-/* Active Tab */
-/* .nav-tabs .nav-link.active {
-  color: #00bfff; /* Light blue active text */
-  /* font-weight: 600;
-
-} */ */
-
-/* Underline effect */
-/* .nav-tabs .nav-link.active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 100%;
-  background-color: #00bfff; /* Light blue underline */
-  /* border-radius: 2px;
-  
-} */ */
-
-/* Hover effect */
-/* .nav-tabs .nav-link:hover {
-  color: #ffffff;
-} */
-
-
-/* Tabs Container */
-/* .nav-tabs {
-  border-bottom: none;
-  justify-content: center;
-  background-color: transparent;
-  list-style: none; /* Remove bullets */
-  /* padding-left: 0; /* Remove any default padding */
-  /* padding: 10px; */ */
-
-/* } */ */
-
-/* Each Tab */
-/* .nav-tabs .nav-item {
-  list-style: none; Double remove bullets */
-  /* padding: 3px;
-} */
-
-/* .nav-tabs .nav-link {
-  color: #bbb;
-  background: transparent;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 5px;
-  font-weight: 500;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  position: relative;
-  text-decoration: none;
-} */
-
-/* Active Tab */
-/* .nav-tabs .nav-link.active {
-  color: #00bfff; Light blue active text */
-  /* font-weight: 600;
-} */
-
-/* Underline effect - fixed */
-/* .nav-tabs .nav-link.active::after {
-  content: '';
-  position: absolute;
-  bottom: 8px; 
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #00bfff;
-  border-radius: 2px;
-} */
-
-/* .nav-tabs .nav-link:hover {
-  color: #ffffff;
-} */
-
-ul, ol {
-  list-style: none; 
-  padding-left: 0; 
-  margin: 0; 
 }
 
-#addModal
-{
-  display: none; 
-  position: fixed; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  background: white; padding: 20px; 
-  box-shadow: 0 0 10px black;
-  border-radius: 15%;
+.todo-card {
+    background-color: #afbfec;
+    padding: 12px;
+    border-radius: 10px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.tab 
-{
-  display: flex;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  background-color: #f1f1f1;
-  overflow: hidden;
-  box-sizing: border-box;
-  font-size: 15px;
-  margin-top: 10px;
+.tab {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 
 .tab button {
-  flex: 1;
-  background-color: inherit;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 3px;
-  /* padding: 14px 16px; */
-  transition: 0.3s;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
 }
 
-.tab button:hover {
-  background-color: #ddd;
-  border-radius: 5px;
-}
-
+.tab button:hover,
 .tab button.active {
-  background-color: #ccc;
-  border-radius: 5px;
+    border-bottom: 2px solid #00bcd4;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#titleAddTask
+{
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.modal {
+    display: none; 
+  }
+
+.modal-content {
+    background-color:#afbfec;
+    padding: 24px 30px;
+    border-radius: 14px;
+    width: 90%;
+    max-width: 200px;
+    color: black;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeInUp 0.3s ease;
+    margin: auto;
+    margin-top: 5px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* .modal-content h2 {
+    margin-top: 0;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 0;
+    text-align: center;
+} */
+ 
+
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+    padding: 12px;
+    margin-bottom: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #605def;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-content button {
+    padding: 10px 16px;
+    border: none;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
 }
 
 .strikethrough {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
+
+button {
+    padding: 10px 16px;
+}
+
+#calendar {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.day-column {
+    flex: 1;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 400px;
+    overflow-y: auto;
+}
+
+.day-column h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.task-item {
+    background-color: #2c2c2c;
+    margin-bottom: 10px;
+    border-left: 5px solid #00ff99;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-time {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.task-controls button {
+    background: none;
+    color: #fff;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#addModal {
+    justify-content: center;
+    
+}
+
+#loggedUserDiv {
+    margin-left: 0;
+    color: black;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    /* padding: 10px 20px; */
+}
+
+#loggedUserDiv button
+{
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.green {
+    background-color: #d4edda; 
+    color: black;
+  }
+  
+  .yellow {
+    background-color: #fff3cd;
+    color: black;
+  }
+  
+  .red {
+    background-color: #f8d7da; 
+    color: black;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  
+  li {
+    display: flex;
+    width: 95%;
+    padding: 10px 0;
+    border-radius: 10px; 
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  li:hover
+  {
+    transform: scale(1.05);
+  }
+  h5  /* day font size*/
+  {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .footer
+  {
+    background-color: #afbfec;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
